@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID"
+         version="3.0">
+<display-name>ProjectManager</display-name>
+  <servlet>
+  	<display-name>ProjectController</display-name>
+    <servlet-name>ps</servlet-name>
+    <servlet-class>com.enit.jee.controleurs.ProjectController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ps</servlet-name>
+    <url-pattern>/ProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ps</servlet-name>
+    <url-pattern>*.php</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>TaskController</display-name>
+    <servlet-name>ts</servlet-name>
+    <servlet-class>com.enit.jee.controleurs.TaskController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ts</servlet-name>
+    <url-pattern>/TaskServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ts</servlet-name>
+    <url-pattern>*.php</url-pattern>
+  </servlet-mapping>
+</web-app>

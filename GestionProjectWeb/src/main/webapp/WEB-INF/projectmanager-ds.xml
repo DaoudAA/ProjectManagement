@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+	<!-- The datasource is bound into JNDI at this location. We reference 
+        this in META-INF/persistence.xml -->
+	<datasource jndi-name="java:/projectmanagerDS"
+		pool-name="projectmanagerDS_Pool2" enabled="true"
+		use-java-context="true">
+		<connection-url>jdbc:mysql://localhost:3306/projectmanagerdb</connection-url>
+		<driver>mysql</driver>
+		<security>
+			<user-name>root</user-name>
+			<password>147Ahazda258</password>
+		</security>
+	</datasource>
+</datasources>
